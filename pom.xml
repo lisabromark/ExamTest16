@@ -59,6 +59,16 @@
                         <target>1.8</target>
                     </configuration>
                 </plugin>
+				
+				  <plugin>
+                <groupId>com.smartbear.soapui</groupId>
+                <artifactId>soapui-maven-plugin</artifactId>
+                <version>5.0.0</version>
+                <configuration>
+                    <projectFile>${projectFile}</projectFile>
+                </configuration>
+            </plugin>
+			
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
