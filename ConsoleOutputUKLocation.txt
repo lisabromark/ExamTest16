@@ -1,0 +1,388 @@
+UKLocation
+
+Started by user Lisa Bromark
+Building on master in workspace C:\Program Files (x86)\Jenkins\workspace\UKLocation
+ > C:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/lisabromark/ExamTest16 # timeout=10
+Fetching upstream changes from https://github.com/lisabromark/ExamTest16
+ > C:\Program Files\Git\bin\git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > C:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/lisabromark/ExamTest16 +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 466a53fe81b74a093cfb772a7aeb0f17070f97c7 (refs/remotes/origin/master)
+ > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 466a53fe81b74a093cfb772a7aeb0f17070f97c7
+ > C:\Program Files\Git\bin\git.exe rev-list 466a53fe81b74a093cfb772a7aeb0f17070f97c7 # timeout=10
+Parsing POMs
+Modules changed, recalculating dependency graph
+Established TCP socket on 55035
+[UKLocation] $ "C:\Program Files\Java\jdk1.8.0_131/bin/java" -cp "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-agent-1.8.1.jar;C:\Program Files\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\apache-maven-3.3.9/conf/logging" jenkins.maven3.agent.Maven33Main "C:\Program Files\apache-maven-3.3.9" "C:\Program Files (x86)\Jenkins\war\WEB-INF\lib\remoting-3.7.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven33-interceptor-1.8.1.jar" "C:\Program Files (x86)\Jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.8.1.jar" 55035
+<===[JENKINS REMOTING CAPACITY]===>channel started
+Executing Maven:  -B -f C:\Program Files (x86)\Jenkins\workspace\UKLocation\pom.xml com.smartbear.soapui:soapui-maven-plugin:test -DprojectFile=UKLocationProject-soapui-project.xml
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building soapUI project 0.0.1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- soapui-maven-plugin:5.0.0:test (default-cli) @ soapui-project ---
+SoapUI 5.0.0 Maven2 TestCase Runner
+13:50:59,402 WARN  [SoapUI] Missing folder [C:\Program Files (x86)\Jenkins\workspace\UKLocation\ext] for external libraries
+13:50:59,403 INFO  [DefaultSoapUICore] Creating new settings at [C:\WINDOWS\system32\config\systemprofile\soapui-settings.xml]
+13:51:00,966 INFO  [WsdlProject] Loaded project from [file:/C:/Program%20Files%20(x86)/Jenkins/workspace/UKLocation/UKLocationProject-soapui-project.xml]
+13:51:01,664 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [UKLocationProject]
+13:51:01,666 INFO  [SoapUITestCaseRunner] Running Project [UKLocationProject], runType = SEQUENTIAL
+13:51:01,682 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [UKLocation-TestCase]
+13:51:01,693 INFO  [SoapUITestCaseRunner] running step [GetUKLocationByCounty]
+13:51:02,119 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+13:51:02,119 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /uklocation.asmx HTTP/1.1
+13:51:02,316 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+13:51:02,319 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+Progress: 1 - Loading Definition from cache
+13:51:02,766 DEBUG [AbstractDefinitionContext] Loading Definition...
+13:51:02,809 DEBUG [WsdlInterfaceDefinition] Loading WSDL: http://www.webservicex.net/uklocation.asmx?WSDL
+13:51:02,809 DEBUG [AbstractWsdlDefinitionLoader] Returning baseInputSource [http://www.webservicex.net/uklocation.asmx?WSDL]
+Retrieving document at 'http://www.webservicex.net/uklocation.asmx?WSDL'.
+13:51:02,942 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+13:51:03,001 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+13:51:03,003 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+13:51:03,005 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+13:51:03,006 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+13:51:03,007 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+13:51:03,010 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+13:51:03,018 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+13:51:03,021 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+13:51:03,024 INFO  [SchemaUtils] Added default schema from file:/C:/WINDOWS/system32/config/systemprofile/.m2/repository/com/smartbear/soapui/soapui/5.0.0/soapui-5.0.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+13:51:03,025 INFO  [SchemaUtils] Loading schema types from [http://www.webservicex.net/uklocation.asmx?WSDL]
+13:51:03,026 INFO  [SchemaUtils] Getting schema http://www.webservicex.net/uklocation.asmx?WSDL
+13:51:03,254 DEBUG [AbstractDefinitionContext] Loaded Definition: ok
+13:51:03,305 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+13:51:03,305 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+13:51:03,306 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+13:51:03,306 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+13:51:03,306 INFO  [SoapUITestCaseRunner] running step [PostCode]
+13:51:03,311 INFO  [SoapUITestCaseRunner] running step [GetUKLocationByPostCode]
+13:51:03,315 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+13:51:03,316 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+13:51:03,316 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /uklocation.asmx HTTP/1.1
+13:51:03,500 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+13:51:03,501 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+13:51:03,508 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+13:51:03,509 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+13:51:03,509 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+13:51:03,509 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+13:51:03,509 INFO  [SoapUITestCaseRunner] running step [GetUKLocationByTown_ProjectLevel]
+13:51:04,386 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetUKLocationByPostCodeResponse xmlns="http://www.webserviceX.NET">
+         <GetUKLocationByPostCodeResult><![CDATA[<NewDataSet>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Deddington</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Drayton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Epwell</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Wigginton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Winderton</Town>
+    <County>Warwickshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Wroxton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Alkerton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Hempton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Hook Norton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Horley</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Hornton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Lower Brailes</Town>
+    <County>Warwickshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Milcombe</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Milton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Balscote</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Barford St John</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Barford St Michael</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Bloxham</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Bodicote</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Broughton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Shutford</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Sibford Ferris</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Sibford Gower</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>South Newington</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Swalcliffe</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Tadmarton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>North Newington</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Ratley</Town>
+    <County>Warwickshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Shenington</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Upper Brailes</Town>
+    <County>Warwickshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+</NewDataSet>]]></GetUKLocationByPostCodeResult>
+      </GetUKLocationByPostCodeResponse>
+   </soap:Body>
+</soap:Envelope>
+13:51:04,507 INFO  [log] CliftonOxfordshireOX15DeddingtonOxfordshireOX15DraytonOxfordshireOX15EpwellOxfordshireOX15WiggintonOxfordshireOX15WindertonWarwickshireOX15WroxtonOxfordshireOX15AlkertonOxfordshireOX15HemptonOxfordshireOX15Hook NortonOxfordshireOX15HorleyOxfordshireOX15HorntonOxfordshireOX15Lower BrailesWarwickshireOX15MilcombeOxfordshireOX15MiltonOxfordshireOX15BalscoteOxfordshireOX15Barford St JohnOxfordshireOX15Barford St MichaelOxfordshireOX15BloxhamOxfordshireOX15BodicoteOxfordshireOX15BroughtonOxfordshireOX15ShutfordOxfordshireOX15Sibford FerrisOxfordshireOX15Sibford GowerOxfordshireOX15South NewingtonOxfordshireOX15SwalcliffeOxfordshireOX15TadmartonOxfordshireOX15North NewingtonOxfordshireOX15RatleyWarwickshireOX15SheningtonOxfordshireOX15Upper BrailesWarwickshireOX15
+13:51:04,526 INFO  [log] TownName : Clifton
+13:51:04,569 INFO  [SoapUITestCaseRunner] running step [GetUKLocationByTown]
+13:51:04,572 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+13:51:04,573 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+13:51:04,573 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /uklocation.asmx HTTP/1.1
+13:51:04,761 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+13:51:04,761 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+13:51:04,767 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+13:51:04,768 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+13:51:04,768 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+13:51:04,768 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+13:51:04,768 INFO  [SoapUITestCaseRunner] running step [ValidateUKAddress_GlobalLevel]
+13:51:04,890 INFO  [log] <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetUKLocationByTownResponse xmlns="http://www.webserviceX.NET">
+         <GetUKLocationByTownResult><![CDATA[<NewDataSet>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Bedfordshire</County>
+    <PostCode>SG17</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Bristol</County>
+    <PostCode>BS8</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Cumbria</County>
+    <PostCode>CA10</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Derbyshire</County>
+    <PostCode>DE6</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Hereford and Worcester</County>
+    <PostCode>WR8</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Lancashire</County>
+    <PostCode>PR4</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Northumberland</County>
+    <PostCode>NE61</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Nottinghamshire</County>
+    <PostCode>NG11</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX15</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton</Town>
+    <County>Stirling</County>
+    <PostCode>FK20</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton Campville</Town>
+    <County>Staffordshire</County>
+    <PostCode>B79</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton Hampden</Town>
+    <County>Oxfordshire</County>
+    <PostCode>OX14</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton Reynes</Town>
+    <County>Milton Keynes</County>
+    <PostCode>MK46</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton upon Dunsmore</Town>
+    <County>Warwickshire</County>
+    <PostCode>CV23</PostCode>
+  </Table>
+  <Table>
+    <Town>Clifton upon Teme</Town>
+    <County>Hereford and Worcester</County>
+    <PostCode>WR6</PostCode>
+  </Table>
+  <Table>
+    <Town>Cliftonville</Town>
+    <County>Kent</County>
+    <PostCode>CT9</PostCode>
+  </Table>
+  <Table>
+    <Town>Great Clifton</Town>
+    <County>Cumbria</County>
+    <PostCode>CA14</PostCode>
+  </Table>
+  <Table>
+    <Town>Little Clifton</Town>
+    <County>Cumbria</County>
+    <PostCode>CA14</PostCode>
+  </Table>
+  <Table>
+    <Town>South Clifton</Town>
+    <County>Nottinghamshire</County>
+    <PostCode>NG23</PostCode>
+  </Table>
+  <Table>
+    <Town>North Clifton</Town>
+    <County>Nottinghamshire</County>
+    <PostCode>NG23</PostCode>
+  </Table>
+</NewDataSet>]]></GetUKLocationByTownResult>
+      </GetUKLocationByTownResponse>
+   </soap:Body>
+</soap:Envelope>
+13:51:04,897 INFO  [log] CliftonBedfordshireSG17CliftonBristolBS8CliftonCumbriaCA10CliftonDerbyshireDE6CliftonHereford and WorcesterWR8CliftonLancashirePR4CliftonNorthumberlandNE61CliftonNottinghamshireNG11CliftonOxfordshireOX15CliftonStirlingFK20Clifton CampvilleStaffordshireB79Clifton HampdenOxfordshireOX14Clifton ReynesMilton KeynesMK46Clifton upon DunsmoreWarwickshireCV23Clifton upon TemeHereford and WorcesterWR6CliftonvilleKentCT9Great CliftonCumbriaCA14Little CliftonCumbriaCA14South CliftonNottinghamshireNG23North CliftonNottinghamshireNG23
+13:51:04,899 INFO  [log] Town : Clifton
+13:51:04,899 INFO  [log] County : Bristol
+13:51:04,899 INFO  [log] Postcode : BS8
+13:51:04,914 INFO  [SoapUITestCaseRunner] running step [Copy of ValidateUKAddress]
+13:51:04,916 DEBUG [HttpClientSupport$SoapUIHttpClient] Stale connection check
+13:51:04,917 DEBUG [HttpClientSupport$SoapUIHttpClient] Attempt 1 to execute request
+13:51:04,917 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Sending request: POST /uklocation.asmx HTTP/1.1
+13:51:05,099 DEBUG [SoapUIMultiThreadedHttpConnectionManager$SoapUIDefaultClientConnection] Receiving response: HTTP/1.1 200 OK
+13:51:05,100 DEBUG [HttpClientSupport$SoapUIHttpClient] Connection can be kept alive indefinitely
+13:51:05,106 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+13:51:05,106 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+13:51:05,106 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+13:51:05,107 INFO  [SoapUITestCaseRunner] Assertion [Contains County] has status VALID
+13:51:05,107 INFO  [SoapUITestCaseRunner] Assertion [Contains Postcode] has status VALID
+13:51:05,107 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [UKLocation-TestCase], time taken: 3394ms, status: FINISHED
+13:51:05,109 INFO  [SoapUITestCaseRunner] Project [UKLocationProject] finished with status [FINISHED] in 3439ms
+[JENKINS] Recording test results
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.565 s
+[INFO] Finished at: 2017-05-22T13:51:05+02:00
+[INFO] Final Memory: 30M/250M
+[INFO] ------------------------------------------------------------------------
+[JENKINS] Archiving C:\Program Files (x86)\Jenkins\workspace\UKLocation\pom.xml to com.scania.cbm.test/soapui-project/0.0.1/soapui-project-0.0.1.pom
+channel stopped
+Finished: SUCCESS
